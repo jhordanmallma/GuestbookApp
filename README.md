@@ -2,14 +2,14 @@
 
 Una aplicación web simple desarrollada con **ASP.NET Core** que permite a los usuarios dejar su nombre y un mensaje en un libro de visitas. Este proyecto fue realizado como parte del curso **"Comprender los aspectos básicos de ASP.NET Core"** de Microsoft.
 
-## 🧾 Características
+##  Características
 
-- ✅ Página de bienvenida con mensaje desde un servicio (`IWelcomeService`)
-- ✅ Formulario para registrar nombre y comentario
-- ✅ Listado de entradas almacenadas (en memoria o en un archivo JSON)
-- ✅ Separación por capas: servicios, modelos y controladores
+-  Página de bienvenida con mensaje desde un servicio (`IWelcomeService`)
+-  Formulario para registrar nombre y comentario
+-  Listado de entradas almacenadas (en memoria o en un archivo JSON)
+-  Separación por capas: servicios, modelos y controladores
 
-## 🚀 Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 - ASP.NET Core MVC
 - C#
@@ -17,7 +17,7 @@ Una aplicación web simple desarrollada con **ASP.NET Core** que permite a los u
 - Inyección de dependencias
 - JSON (para almacenamiento de datos)
 
-## 📂 Estructura del proyecto
+##  Estructura del proyecto
 
 ```bash
 GuestbookApp/
@@ -36,7 +36,7 @@ GuestbookApp/
 ├── appsettings.json
 └── Program.cs
 ```
-## 🧪 Cómo ejecutar el proyecto
+##  Cómo ejecutar el proyecto
 - Clona este repositorio:
 ```bash
 git clone https://github.com/jhordanmallma/GuestbookApp.git
@@ -52,7 +52,7 @@ dotnet run
 https://localhost:5001/
 ```
 
-## 💬 Autor
+##  Autor
 Jhordan Mallma
 Desarrollador en formación | Proyecto del curso Microsoft
 
