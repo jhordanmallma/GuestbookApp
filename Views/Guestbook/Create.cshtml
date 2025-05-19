@@ -1,0 +1,26 @@
+@model MiPrimeraAppWeb.Models.GuestEntry
+
+@{
+    ViewData["Title"] = "Guestbook — Escribe tu mensaje";
+}
+
+<h1>@ViewData["Title"]</h1>
+<p>@ViewBag.Message</p>
+
+<form asp-controller="Guestbook" asp-action="Create" method="post">
+    <div>
+        <label asp-for="Name"></label><br />
+        <input asp-for="Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Message"></label><br />
+        <textarea asp-for="Message"></textarea>
+        <span asp-validation-for="Message" class="text-danger"></span>
+    </div>
+    <button type="submit">Enviar</button>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

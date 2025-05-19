@@ -1,0 +1,27 @@
+@model IEnumerable<MiPrimeraAppWeb.Models.GuestEntry>
+
+@{
+    ViewData["Title"] = "Guestbook — Entradas";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (!Model.Any())
+{
+    <p>No hay entradas aún.</p>
+}
+else
+{
+    <ul>
+    @foreach (var entry in Model)
+    {
+        <li>
+            <strong>@entry.Name:</strong>
+            @entry.Message
+            <em>(@entry.Date.ToString("g"))</em>
+        </li>
+    }
+    </ul>
+}
+
+<a asp-controller="Guestbook" asp-action="Create">Agregar otra entrada</a>
