@@ -52,7 +52,7 @@ dotnet run
 https://localhost:5001/
 ```
 
-##💬 Autor
+## 💬 Autor
 Jhordan Mallma
 Desarrollador en formación | Proyecto del curso Microsoft
 
